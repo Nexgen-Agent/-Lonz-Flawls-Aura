@@ -28,9 +28,17 @@ SITE_REGISTRY_SERVICE = {
     "cache_ttl_seconds": 3600,
 }
 
+# --- Record Label AI Settings ---
+RECORD_LABEL_CONFIG = {
+    "enabled": True,
+    "min_authenticity_threshold": 0.7,
+    "virality_model_version": "v1.2",
+}
+
 # --- Feature Flags ---
 FEATURE_FLAGS = {
     "ENABLE_AUTONOMOUS_INNOVATION": True,
     "ENABLE_PRIVATE_LEDGER": True,
     "ENABLE_INNOVATION_RECRUITER": True,
+    "ENABLE_AI_RECORD_LABEL": True,
 }
