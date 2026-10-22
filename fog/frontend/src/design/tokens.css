@@ -1,0 +1,45 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #FAF8F5;
+  --bg-cream: #F5F2EB;
+  --bg-dark-nav: #121418;
+
+  /* Typography Colors */
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A433B;
+  --text-tertiary: #6E665A;
+
+  /* Navigation Tokens */
+  --nav-bg: #121418;
+  --nav-inactive: #C8CCD4;
+  --nav-active: #D4AF37;
+
+  /* Zone Accent Colors (Untouched) */
+  --accent-gold: #D4AF37;
+  --accent-cyan: #00D2FF;
+  --accent-purple: #9D4EDD;
+  --accent-emerald: #10B981;
+  --accent-rose: #F43F5E;
+}
+
+/* Navigation Item Styling */
+.nav-item {
+  color: var(--nav-inactive);
+}
+
+.nav-item .nav-icon,
+.nav-item .nav-label {
+  color: var(--nav-inactive);
+}
+
+.nav-item.active,
+.nav-item.selected {
+  color: var(--nav-active);
+}
+
+.nav-item.active .nav-icon,
+.nav-item.active .nav-label,
+.nav-item.selected .nav-icon,
+.nav-item.selected .nav-label {
+  color: var(--nav-active);
+}
